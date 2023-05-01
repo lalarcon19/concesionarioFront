@@ -1,0 +1,11 @@
+form{
+  display: flex;
+  justify-content:center;
+  width: 70vh;
+  margin-left: 30%;
+  background-color: azure;
+  padding: 60px;
+  border-radius: 10px ;
+  font-family:'Times New Roman', Times, serif;
+  flex-direction: column;
+}

@@ -1,0 +1,43 @@
+<div class="continer">
+  <h2>Lista Usuarios</h2>
+    <div class="table">
+        <table class="table">
+          <thead  class="table table-bordered table-sm">
+            <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Documento</th>
+            <th>Direccion</th>
+            <th>Fecha Nacimiento</th>
+            <th>Edad</th>
+            <th>Telefono</th>
+            <th>Fecha Ingreso</th>
+            <th>Acciones</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of listUser">
+              <td>{{item.id}}</td>
+              <td>{{item.nombre}}</td>
+              <td>{{item.apellido}}</td>
+              <td>{{item.correo}}</td>
+              <td>{{item.documento}}</td>
+              <td>{{item.direccion}}</td>
+              <td>{{item.fechaNac}}</td>
+              <td>{{item.edad}}</td>
+              <td>{{item.telefono}}</td>
+              <td>{{item.fechaIngreso}}</td>
+              <td class="btn">
+                <a class="btn btn-success" href="#">Editar</a>
+                <a class="btn btn-danger" href="#">Eliminar</a></td>
+            </tr>
+
+        </tbody>
+
+        </table>
+    </div>
+  </div>
+
+

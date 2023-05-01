@@ -1,0 +1,13 @@
+
+*{
+margin:0;
+padding: 30px;
+}
+thead{
+background: rgb(4,67,190);
+background: linear-gradient(90deg, rgba(4,67,190,1) 0%, rgba(23,136,214,0.891281512605042) 50%, rgba(84,177,182,1) 100%);
+
+}
+.btn{
+  padding: 5px;
+}
