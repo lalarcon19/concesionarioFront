@@ -1,0 +1,22 @@
+
+body{
+  padding: 0.5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+  width: 13%;
+  background: #166eb7;
+
+  height: 100%;
+}
+
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: rgb(214, 210, 210);
+
+
+}
+

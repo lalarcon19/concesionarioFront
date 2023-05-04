@@ -1,14 +1,15 @@
 *{
   text-decoration:none;
-  padding: 5vh;
+  padding: 2vh;
+
   color:black;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
 nav{
-  background: rgb(4,67,190);
-  background: linear-gradient(90deg, rgba(4,67,190,1) 0%, rgba(23,136,214,0.891281512605042) 50%, rgba(84,177,182,1) 100%);
-  height: 18vh;
+
+  background: rgb(18, 106, 174);
+  background: linear-gradient(103deg, rgb(16, 120, 199) 61%, rgba(23,131,216,1) 100%);
   justify-content: center;
 }
 

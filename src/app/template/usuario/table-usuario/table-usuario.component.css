@@ -4,8 +4,8 @@ margin:0;
 padding: 30px;
 }
 thead{
-background: rgb(4,67,190);
-background: linear-gradient(90deg, rgba(4,67,190,1) 0%, rgba(23,136,214,0.891281512605042) 50%, rgba(84,177,182,1) 100%);
+  background: rgb(76,159,216);
+  background: linear-gradient(90deg, rgba(76,159,216,0.891281512605042) 47%, rgba(69,184,191,0.9360994397759104) 100%);
 
 }
 .btn{
