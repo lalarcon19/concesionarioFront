@@ -1,19 +1,17 @@
+
 header{
   display: flex;
-  justify-content:center;
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  rgb(200, 211, 228);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:  rgb(205, 199, 199);
   border-color: black;
-  border-radius: 5%;
-  align-items: center;
-  margin-top: 3vh;
 
 
 
 }
+
 img{
-  width: 100px;
-  height: 80px;
+  width: 15vh;
+  height: 10vh;
 }
 
 

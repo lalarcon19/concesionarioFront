@@ -1,47 +1,45 @@
 *{
+
   display: flex;
  justify-content: center;
+
+
+
+
 }
 
 form{
-  display: flex;
-  justify-content:center;
-  width: 70vh;
-  margin-left: 30%;
-  background-color: azure;
-  padding: 60px;
-  border-radius: 10px ;
+  flex-direction: column;
+  margin-top: 10vh;
   font-family:'Times New Roman', Times, serif;
-  flex-direction: column;
-}
+  display: block;
 
-label{
-  margin-left: 5vh;
-  flex-direction: column;
 }
 
 input{
-  width: 20vh;
+  width: 50vh;
   border-radius: 30vh;
-  flex-direction: column;
-  text-align:center;
+
 }
 
 button{
+  display: flex;
+  justify-content: center;
   background: rgb(4,67,190);
   background: linear-gradient(90deg, rgba(4,67,190,1) 0%, rgba(23,136,214,0.891281512605042) 50%, rgba(84,177,182,1) 100%);
   border-radius: 5vh;
-  margin-top: 6vh;
+  margin-top: 10vh;
   height: 6vh;
 
 
 }
 
 img{
-
-  width: 70vh;
-  height: 105vh;
-  border-radius: 10px
+  margin-top: 10vh;
+  width: 90vh;
+  height: 100vh;
+  border-radius: 30%;
+  justify-content: flex-end;
 }
 
 

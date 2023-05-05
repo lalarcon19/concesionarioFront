@@ -6,8 +6,8 @@ body{
   align-items:center;
   flex-direction: column;
   width: 12%;
-  background: rgb(18, 106, 174);
-  background: linear-gradient(103deg, rgb(16, 120, 199) 61%, rgba(23,131,216,1) 100%);
+  background: rgb(17, 36, 105);
+  background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
 
 
   height: 100%;
