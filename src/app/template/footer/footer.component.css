@@ -1,13 +1,45 @@
 footer {
-    position: fixed;
-    bottom: 0;
-    height: 30%;
-    width: 100%;
-    background: #166eb7;
-    border: 5vh;
+  height: 10rem;
+  background: rgb(30, 45, 105);
+  background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
+}
 
-  }
+.uno{
+  float: left;
+  width: 47%;
+  height: 100%;
+  color: white;
+  margin-left: 7em;
+  font-size: 1.3rem;
+}
 
+.dos{
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(252, 246, 238);
+}
+
+.imgp{
+  height: 50%;
+  justify-content: center;
+}
+
+.imgs{
+  height: 25%;
+  justify-content: center;
+}
+
+.imgt{
+  height: 20%;
+  margin-left: 2vh;
+
+}
 
 
 

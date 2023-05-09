@@ -1,20 +1,19 @@
 *{
+  display: flexbox;
   text-decoration:none;
   padding-left: 3vh;
+  justify-content:flex-start;
+  align-items: flex-start;
 
-
-  color:rgb(238, 231, 231);
+  color:black;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
 nav{
   display: flex;
-  background: rgb(30, 45, 105);
-  background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
+  background: rgb(220, 220, 221);
+  background: linear-gradient(103deg, rgb(220,220,221) 61%, rgba(220,220,221) 100%);
 
-}
-header {
-  justify-content: flex-start;
 }
 
 

@@ -5,16 +5,17 @@ body{
   justify-content: flex-start;
   align-items:center;
   flex-direction: column;
-  width: 12%;
+  width: 12rem;
   background: rgb(17, 36, 105);
-  background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
+  background: (103deg, rgb(27, 60, 135) 61%, rgba(27,60,135) 100%);
+  height: 100rem;
 
 
-  height: 100%;
 }
 
 
 a{
+  margin-top: 5vh;
   display: flex;
   text-decoration: none;
   color: rgb(214, 210, 210);

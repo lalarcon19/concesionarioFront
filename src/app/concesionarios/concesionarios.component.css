@@ -1,5 +1,6 @@
 
 body{
+
   padding: 0.5px;
   display: flex;
   justify-content: flex-start;
@@ -8,11 +9,12 @@ body{
   width: 13%;
   background: rgb(17, 36, 105);
   background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
-  height: 100%;
+  height: 100rem;
 }
 
 
 a{
+  margin-top: 5vh;
   display: flex;
   text-decoration: none;
   color: rgb(214, 210, 210);
