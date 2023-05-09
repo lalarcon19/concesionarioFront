@@ -30,7 +30,7 @@
               <td>{{item.telefono}}</td>
               <td>{{item.fechaIngreso}}</td>
               <td class="btn">
-                <a class="btn btn-success" href="#">Editar</a>
+                <button (click)="editItem(item)" >Editar</button>
                 <a class="btn btn-danger" href="#">Eliminar</a></td>
             </tr>
 

@@ -1,5 +1,7 @@
 <div>
-  <form>
+  <form [formGroup]="usuarioForm" (ngSubimt)="addUsuario()">
+      <input type="hidden" name="id" id="txtid" formControlName="id">
+
       <div class="form-grop">
         <label for="name">Nombre</label>
         <input type="text" class="form-control" name="txtname" id="txtname">
