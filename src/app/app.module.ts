@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './template/header/header.component';
 import { MenuComponent } from './template/menu/menu.component';
@@ -14,6 +14,7 @@ import { FormComponentComponent } from './template/usuario/form-usuario/form-com
 import { TableUsuarioComponent } from './template/usuario/table-usuario/table-usuario.component';
 import { ServiceuserService } from './service/serviceuser.service';
 import {  HttpClientModule } from '@angular/common/http';
+
 
 import { ConcesionariosComponent } from './concesionarios/concesionarios.component';
 import { TableConcesionariosComponent } from './concesionarios/table-concesionarios/table-concesionarios.component';
@@ -63,9 +64,9 @@ import { FormVentasComponent } from './ventas/form-ventas/form-ventas.component'
     FormsModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
-
-
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ServiceuserService],
   bootstrap: [AppComponent]

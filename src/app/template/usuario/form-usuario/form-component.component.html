@@ -1,5 +1,6 @@
 <div>
-   <form>
+  <form [formGroup]="usuarioForm" (ngSubimt)="addUsuario()">
+      <input type="hidden" name="id" id="txtid" formControlName="id">
 
       <div class="form-grop">
         <label for="name">Nombre</label>
@@ -48,10 +49,10 @@
         <input type="date" class="form-control" name="txtfechaIngreso" id="txtname">
       </div>
 
-
-    <button>Registrar</button>
-
+      <button class="btn btn-success">Registrar</button>
   </form>
+</div>
+<div>
   <img src="./assets/imag1.jpg" alt="">
 </div>
 

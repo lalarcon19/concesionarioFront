@@ -1,47 +1,37 @@
-*{
-  display: flex;
- justify-content: center;
-}
 
 form{
-  display: flex;
-  justify-content:center;
-  width: 70vh;
-  margin-left: 30%;
-  background-color: azure;
-  padding: 60px;
-  border-radius: 10px ;
-  font-family:'Times New Roman', Times, serif;
-  flex-direction: column;
-}
+  float: left;
+  padding: 5%;
+  font-size: 2.5vh;
+  color:black;
+  background: rgb(220, 220, 221);
+  background: linear-gradient(103deg, rgb(220,220,221) 61%, rgba(220,220,221) 100%);
+  height: 120vh;
+  width: 39%;
+  margin:5%;
+  border-radius: 5rem;
 
-label{
-  margin-left: 5vh;
-  flex-direction: column;
 }
 
 input{
-  width: 20vh;
-  border-radius: 30vh;
-  flex-direction: column;
-  text-align:center;
+  border-radius: 2rem;
 }
 
 button{
-  background: rgb(4,67,190);
-  background: linear-gradient(90deg, rgba(4,67,190,1) 0%, rgba(23,136,214,0.891281512605042) 50%, rgba(84,177,182,1) 100%);
-  border-radius: 5vh;
-  margin-top: 6vh;
-  height: 6vh;
-
-
+  margin-top: 8vh;
+  width: 100%;
+  background: rgb(30, 45, 105);
+  background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
+  border-radius:2rem;
 }
-
 img{
-
-  width: 70vh;
-  height: 105vh;
-  border-radius: 10px
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin: 3vh;
 }
+
+
+
 
 
