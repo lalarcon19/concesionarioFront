@@ -8,7 +8,7 @@ import { FooterComponent } from './template/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
-import { InicioComponentComponent } from './template/usuario/inicio-component/inicio-component.component';;
+import { InicioComponentComponent } from './template/inicio-component/inicio-component.component';;
 import {LoginComponentComponent } from './template/usuario/login-usuario/login-component.component';
 import { FormComponentComponent } from './template/usuario/form-usuario/form-component.component';
 import { TableUsuarioComponent } from './template/usuario/table-usuario/table-usuario.component';

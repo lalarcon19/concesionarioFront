@@ -4,7 +4,7 @@ import { RouterModule, Routes} from '@angular/router';
 import {LoginComponentComponent } from './template/usuario/login-usuario/login-component.component'
 import { FormComponentComponent} from './template/usuario/form-usuario/form-component.component'
 import { TableUsuarioComponent} from './template/usuario/table-usuario/table-usuario.component'
-import { InicioComponentComponent } from './template/usuario/inicio-component/inicio-component.component'
+import { InicioComponentComponent } from './template/inicio-component/inicio-component.component'
 
 import {AutomovilesComponent} from './automoviles/automoviles.component'
 import {TableAutomovilesComponent } from './automoviles/table-automoviles/table-automoviles.component'
