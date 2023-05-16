@@ -10,7 +10,7 @@ import { User } from 'src/app/model/User';
 })
 export class TableUsuarioComponent implements OnInit{
 
-  listUser:User[]=[]
+  listUser:User[]=[];
 
   constructor(private userService:ServiceuserService){
 
@@ -20,10 +20,16 @@ export class TableUsuarioComponent implements OnInit{
   }
   allUser():void{
     this.userService.getAllUser().subscribe(res=>{
-      console.log(res);
+      console.log('>>>>>>>>>>',  res);
       this.listUser=res.data;
       console.log(this.listUser)
 
+    });
+  }
+
+  eliminarUsuario(data:number):void {
+    this.userService.eliminarUsuario(data).subscribe(resp => {
+      console.log("####", resp)
     });
   }
 }

@@ -2,16 +2,16 @@
   <h2>Lista Usuarios</h2>
     <div class="table">
         <table  class="table table-bordered table-sm">
-          <thead class="tabla">
+          <thead class="table">
             <tr>
             <th>Id</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Correo</th>
             <th>Documento</th>
-            <th>Direccion</th>
-            <th>Fecha Nacimiento</th>
+            <th>fechaNac</th>
             <th>Edad</th>
+            <th>Direccion</th>
             <th>Telefono</th>
             <th>Fecha Ingreso</th>
             <th>Acciones</th>
@@ -24,14 +24,15 @@
               <td>{{item.apellido}}</td>
               <td>{{item.correo}}</td>
               <td>{{item.documento}}</td>
-              <td>{{item.direccion}}</td>
               <td>{{item.fechaNac}}</td>
               <td>{{item.edad}}</td>
+              <td>{{item.direccion}}</td>
               <td>{{item.telefono}}</td>
               <td>{{item.fechaIngreso}}</td>
               <td class="btn">
-                <button class="btn btn-success">Editar</button>
-                <a class="btn btn-danger" href="#">Eliminar</a></td>
+                <a class="btn btn-success">Editar</a>
+                <a class="btn btn-danger" (click)="eliminarUsuario(item.id)">Eliminar</a>
+              </td>
             </tr>
 
         </tbody>

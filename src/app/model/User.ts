@@ -6,9 +6,9 @@ export interface User{
   apellido:String,
   correo:String,
   documento:number,
-  direccion:String,
   fechaNac:Date,
   edad:number,
+  direccion:String,
   telefono:number,
   fechaIngreso:Date
 

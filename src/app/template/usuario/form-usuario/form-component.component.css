@@ -1,5 +1,7 @@
 
 form{
+
+  flex-direction: column;
   padding:3rem ;
   font-size: 2.5vh;
   color:black;
@@ -22,11 +24,10 @@ button{
   background: linear-gradient(103deg, rgb(30,45, 105) 61%, rgba(40,45,105) 100%);
   border-radius:2rem;
 }
+
 img{
-  display: inline-block;
-  width: 25rem;
-  vertical-align: top;
-  margin: 3vh;
+   width: 20px;
+   height: 20px;
 }
 
 

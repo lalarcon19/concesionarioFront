@@ -7,14 +7,13 @@ import { MenuComponent } from './template/menu/menu.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import {  HttpClientModule } from '@angular/common/http';
 
 import { InicioComponentComponent } from './template/inicio-component/inicio-component.component';;
 import {LoginComponentComponent } from './template/usuario/login-usuario/login-component.component';
 import { FormComponentComponent } from './template/usuario/form-usuario/form-component.component';
 import { TableUsuarioComponent } from './template/usuario/table-usuario/table-usuario.component';
 import { ServiceuserService } from './service/serviceuser.service';
-import {  HttpClientModule } from '@angular/common/http';
-
 
 import { ConcesionariosComponent } from './concesionarios/concesionarios.component';
 import { TableConcesionariosComponent } from './concesionarios/table-concesionarios/table-concesionarios.component';
@@ -65,8 +64,8 @@ import { FormVentasComponent } from './ventas/form-ventas/form-ventas.component'
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ServiceuserService],
   bootstrap: [AppComponent]
