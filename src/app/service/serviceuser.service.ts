@@ -12,7 +12,6 @@ export class ServiceuserService {
   constructor(private http: HttpClient) {}
 
   getAllUser(): Observable<ResponseI> {
-    console.log;
     return this.http.get<ResponseI>(urlBase + '/all');
     //return this.http.get<ResponseI>("http://localhost:8083/usuario/all");
   }

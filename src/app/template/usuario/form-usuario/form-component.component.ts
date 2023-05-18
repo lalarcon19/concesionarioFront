@@ -9,21 +9,23 @@ import { ServiceuserService } from 'src/app/service/serviceuser.service';
   templateUrl: './form-component.component.html',
   styleUrls: ['./form-component.component.css'],
 })
-export class FormComponentComponent implements OnInit {
+export class FormComponentComponent {
   usuarioForm = new FormGroup({
     id: new FormControl(''),
     nombre: new FormControl(''),
     apellido: new FormControl(''),
     correo: new FormControl(''),
     documento: new FormControl(''),
-    direccion: new FormControl(''),
-    fechaNac: new FormControl(''),
-    edad: new FormControl(''),
-    telefono: new FormControl(''),
     fechaIngreso: new FormControl(''),
+    direccion: new FormControl(''),
+    telefono: new FormControl(''),
+    edad: new FormControl(''),
+    fechaNac: new FormControl(''),
+
   });
   constructor(private userService: ServiceuserService, router: Router) {}
-  ngOnInit(): void {}
+
+
   addUsuario(): void {
     let usuario = {
       id: this.usuarioForm.get('id')?.value,
@@ -31,14 +33,16 @@ export class FormComponentComponent implements OnInit {
       apellido: this.usuarioForm.get('apellido')?.value,
       correo: this.usuarioForm.get('correo')?.value,
       documento: this.usuarioForm.get('documento')?.value,
+      fechaIngreso: this.usuarioForm.get('fechaIngreso')?.value,
       direccion: this.usuarioForm.get('direccion')?.value,
-      fechaNac: this.usuarioForm.get('fechaNac')?.value,
-      edad: this.usuarioForm.get('edad')?.value,
       telefono: this.usuarioForm.get('telefono')?.value,
+      edad: this.usuarioForm.get('edad')?.value,
+      fechaNac: this.usuarioForm.get('fechaNac')?.value
     };
 
-    this.userService.crearUsuario(usuario).subscribe((resp) => {
+    this.userService.crearUsuario(usuario).subscribe(resp => {
       if (resp.status === 'ok') {
+        console.log(resp)
         alert('Registro exitoso');
       } else {
         alert('Error.');
@@ -46,5 +50,5 @@ export class FormComponentComponent implements OnInit {
     });
   }
 
-  
+
 }

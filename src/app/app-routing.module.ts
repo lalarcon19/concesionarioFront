@@ -17,6 +17,7 @@ import {TableConcesionariosComponent} from './concesionarios/table-concesionario
 import {VentasComponent} from './ventas/ventas.component'
 import {FormVentasComponent} from './ventas/form-ventas/form-ventas.component'
 import {TableVentasComponent} from './ventas/table-ventas/table-ventas.component'
+import { VistaAutomovilesComponent } from './automoviles/vista-automoviles/vista-automoviles.component';
 
 const routes: Routes =[
   {path:'iniciarSesion',component:LoginComponentComponent},
@@ -27,6 +28,7 @@ const routes: Routes =[
   {path:'automoviles',component: AutomovilesComponent},
   {path: 'tableAutomoviles',component:TableAutomovilesComponent},
   {path: 'formAutomoviles',component:FormAutomovilesComponent},
+  {path: 'vistaAutomoviles', component:VistaAutomovilesComponent},
 
   {path:'concesionarios',component:ConcesionariosComponent},
   {path:'registrarConcesionario',component:FormConcesionariosComponent},

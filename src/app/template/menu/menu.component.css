@@ -1,19 +1,21 @@
-*{
-  display: flexbox;
-  text-decoration:none;
-  padding-left: 3vh;
+.container-menu{
+  display: flex;
   justify-content:flex-start;
   align-items: flex-start;
-
+  height: 10vh;
+  width: 100vw;
   color:black;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
 nav{
   display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgb(220, 220, 221);
   background: linear-gradient(103deg, rgb(220,220,221) 61%, rgba(220,220,221) 100%);
-
+  width: 100%;
+  height: 100%;
 }
 
 

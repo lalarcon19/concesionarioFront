@@ -6,10 +6,9 @@ export interface User{
   apellido:String,
   correo:String,
   documento:number,
-  fechaNac:Date,
-  edad:number,
+  fechaIngreso:Date,
   direccion:String,
-  telefono:number,
-  fechaIngreso:Date
-
+  telefono:string,
+  edad:number,
+  fechaNac:Date
 }

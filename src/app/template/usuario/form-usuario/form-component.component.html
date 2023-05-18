@@ -1,57 +1,60 @@
-<div>
-  <form [formGroup]="usuarioForm" (ngSubimt)="addUsuario()">
-      <input type="hidden" name="id" id="txtid" formControlName="id">
+<div class="contenedor">
+  <div class="left">
+    <form class="form-container" [formGroup]="usuarioForm" (ngSubimt)="addUsuario()">
+      <h1 id="registrar">REGISTRARSE</h1>
 
       <div class="form-grop">
-        <label for="name">Nombre</label>
-        <input type="text" class="form-control" name="txtnombre" formControlName="nombre"id="txtname">
+        <label for="txtname">Nombre</label>
+        <input type="text" class="form-control" name="txtnombre" formControlName="nombre" id="txtname" />
       </div>
 
       <div class="form-grop">
-        <label for="name">Apellido</label>
-        <input type="text"  class="form-control" name="txtapellido" formControlName="apellido" id="txtapellido">
+        <label for="txtapellido">Apellido</label>
+        <input type="text" class="form-control" name="txtapellido" formControlName="apellido" id="txtapellido" />
       </div>
 
       <div class="form-grop">
-        <label for="name">Correo</label>
-        <input type="text"  class="form-control" name="txtcorreo" formControlName="correo" id="txtcorreo">
-      </div>
-
-
-      <div class="form-grop">
-        <label for="name">Documento</label>
-         <input type="number" class="form-control" name="txtdocumento" formControlName="documento" id="txtdocumento">
+        <label for="txtcorreo">Correo</label>
+        <input type="text" class="form-control" name="txtcorreo" formControlName="correo" id="txtcorreo" />
       </div>
 
       <div class="form-grop">
-         <label for="name">Direccion</label>
-         <input type="text" class="form-control" name="txtdireccion" formControlName="direccion" id="txtdireccion">
+        <label for="txtdocumento">Documento</label>
+        <input type="number" class="form-control" name="txtdocumento" formControlName="documento" id="txtdocumento" />
       </div>
 
       <div class="form-grop">
-        <label for="name">Fecha Nacimiento</label>
-        <input type="text" class="form-control" name="txtfechaNac" formControlName="fechaNac" id="txtfechaNac">
-     </div>
-
-     <div class="form-grop">
-      <label for="name">Edad</label>
-      <input type="number" class="form-control" name="txtedad"  formControlName="edad" id="txtedad">
-   </div>
+        <label for="txtdireccion">Direccion</label>
+        <input type="text" class="form-control" name="txtdireccion" formControlName="direccion" id="txtdireccion" />
+      </div>
 
       <div class="form-grop">
-        <label for="name">Telefono</label>
-        <input type="number" class="form-control" name="txttelefono" id="txttelefono">
+        <label for="txtfechaNac">Fecha Nacimiento</label>
+        <input type="text" class="form-control" name="txtfechaNac" formControlName="fechaNac" id="txtfechaNac" />
       </div>
 
-      <div>
-        <input type="submit" value="Guardar">
+      <div class="form-grop">
+        <label for="txtedad">Edad</label>
+        <input type="number" class="form-control" name="txtedad" formControlName="edad" id="txtedad" />
       </div>
 
-  </form>
-  <div class="img">
-    <img src="./assets/imag2.jpg" >
+      <div class="form-grop">
+        <label for="txttelefono">Telefono</label>
+        <input type="number" class="form-control" name="txttelefono" id="txttelefono" />
+      </div>
+
+      <div class="form-grop">
+        <label for="txtfechaIngreso">Fecha ingreso</label>
+        <input type="number" class="form-control" name="txtfechaIngreso" id="txtfechaIngreso" />
+      </div>
+
+      <div class="form-grop">
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
   </div>
+
+  <div class="right">
+    <img id="img" src="./assets/imag2.jpg" alt="" />
   </div>
-
-
-
+</div>
