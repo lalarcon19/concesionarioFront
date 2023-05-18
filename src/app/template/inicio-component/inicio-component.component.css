@@ -1,25 +1,92 @@
 
-body{
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 
-  padding: 0.5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items:center;
-  flex-direction: column;
-  width: 12rem;
-  background: rgb(17, 36, 105);
-  background: (103deg, rgb(27, 60, 135) 61%, rgba(27,60,135) 100%);
-  height: 80rem;
+/* Open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+.container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009f;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.titulo {
+    width: 40%;
+    height: auto;
+    margin-top: 1em;
+    padding: 0 .8em;
+    font-size: 5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    line-height: 1.7;
+    color: white;
 }
 
 
-a{
-  margin-top: 5vh;
-  display: flex;
-  text-decoration: none;
-  color: rgb(214, 210, 210);
-
+.ver-autos, .ver-sedes {
+    margin-left: 1.3em;
+    width: 20%;
+    height: 3em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #242424;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
 
 }
+
+.ver-autos:hover, .ver-sedes:hover {
+    cursor: pointer;
+    background-color: #535252;
+    color: rgb(187, 187, 187);
+
+}
+
+HTML:
+
+<div class="container">
+    <div class="img-container">
+        <img src="" class="fondo">
+        <div class="contenido">
+
+            <h1 class="titulo">Descubre el lujo de un carrazo</h1>
+
+
+            <div class="botones">
+                <button class="ver-autos">ver vehiculos</button>
+                <button class="ver-sedes">ver sedes</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

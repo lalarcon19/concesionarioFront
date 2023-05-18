@@ -27,6 +27,7 @@ import { VentasComponent } from './ventas/ventas.component';
 import { TableVentasComponent } from './ventas/table-ventas/table-ventas.component';
 import { FormVentasComponent } from './ventas/form-ventas/form-ventas.component';
 import { VistaAutomovilesComponent } from './automoviles/vista-automoviles/vista-automoviles.component';
+import { MuestrasComponent } from './usuario/muestras/muestras.component';
 
 
 
@@ -56,6 +57,7 @@ import { VistaAutomovilesComponent } from './automoviles/vista-automoviles/vista
     TableVentasComponent,
     FormVentasComponent,
     VistaAutomovilesComponent,
+    MuestrasComponent,
 
 
 
