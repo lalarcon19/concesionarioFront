@@ -16,4 +16,14 @@ export class ServicecarService {
   getAllCar():Observable<ResponseI>{
     return this.http.get<ResponseI>(urlAutomovil+"/all")
   }
+
+  crearAutomovil(data: any): Observable<ResponseI>{
+    console.log('######',data);
+    return this.http.post<ResponseI>(urlAutomovil + "/create", data);
+  }
+
+  eliminarAutomovil(data:number): Observable<ResponseI>{
+    console.log("#######", data);
+    return this.http.get<ResponseI>(urlAutomovil + "/delete" + data);
+  }
 }

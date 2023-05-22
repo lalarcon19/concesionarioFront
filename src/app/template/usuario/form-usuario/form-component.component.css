@@ -2,20 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
+  
 }
 
 .left {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 85%;
-  width: 50%;
+  height: 90%;
+  width: 30%;
   border-radius: 1em 0 0 1em;
   border: solid 8px;
   border-color: rgb(19, 19, 79);
-  padding: 1.5em;
+  padding: 1em;
 }
 
 .form-container {
@@ -35,27 +36,24 @@
 input {
   border-radius: 2em;
   border: solid;
-  width: 100%;
+  width: 200%;
   height: 2em;
 }
 
-button {
+.button {
   margin-top: 1em;
-  height: 2em;
-  width: 100%;
   border-radius: 2em;
   color: beige;
   background: rgb(30, 45, 105);
-  background: linear-gradient(
-    103deg,
+  background: linear-gradient( 103deg,
     rgb(30, 45, 105) 61%,
     rgba(40, 45, 105) 100%
   );
 }
 
 .right {
-  height: 80%;
-  width: 50%;
+  height: 90%;
+  width: 60%;
   border-radius: 0 1em  1em 0 ;
   border: solid 6px;
 }

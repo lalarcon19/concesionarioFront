@@ -1,6 +1,7 @@
-import { User } from "./User"
+
 
 export interface ResponseI {
+  code: number;
   status:String,
   data:any
 }

@@ -17,7 +17,8 @@ export class ServiceuserService {
   }
 
   crearUsuario(data: any): Observable<ResponseI> {
-    return this.http.post<ResponseI>(urlBase + '/create', data);
+    console.log("#####", data);
+    return this.http.post<ResponseI>(urlBase + "/create", data );
   }
 
   eliminarUsuario(data:number): Observable<ResponseI> {

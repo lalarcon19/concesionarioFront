@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { User } from 'src/app/model/User';
 import { ServiceuserService } from 'src/app/service/serviceuser.service';
+import Swal from 'sweetalert2';
+
+
 
 @Component({
   selector: 'app-form-component',
   templateUrl: './form-component.component.html',
   styleUrls: ['./form-component.component.css'],
 })
-export class FormComponentComponent {
+export class FormComponentComponent implements OnInit{
+
+
   usuarioForm = new FormGroup({
     id: new FormControl(''),
     nombre: new FormControl(''),
@@ -23,29 +27,40 @@ export class FormComponentComponent {
     fechaNac: new FormControl(''),
 
   });
+  router: any;
   constructor(private userService: ServiceuserService, router: Router) {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 
   addUsuario(): void {
+    console.log("Entro al boton");
+
     let usuario = {
       id: this.usuarioForm.get('id')?.value,
       nombre: this.usuarioForm.get('nombre')?.value,
       apellido: this.usuarioForm.get('apellido')?.value,
       correo: this.usuarioForm.get('correo')?.value,
       documento: this.usuarioForm.get('documento')?.value,
-      fechaIngreso: this.usuarioForm.get('fechaIngreso')?.value,
+      fechaNac: this.usuarioForm.get('fechaNac')?.value,
+      edad: this.usuarioForm.get('edad')?.value,
       direccion: this.usuarioForm.get('direccion')?.value,
       telefono: this.usuarioForm.get('telefono')?.value,
-      edad: this.usuarioForm.get('edad')?.value,
-      fechaNac: this.usuarioForm.get('fechaNac')?.value
+      fechaIngreso: this.usuarioForm.get('fechaIngreso')?.value
+
     };
 
     this.userService.crearUsuario(usuario).subscribe(resp => {
-      if (resp.status === 'ok') {
-        console.log(resp)
-        alert('Registro exitoso');
-      } else {
-        alert('Error.');
+        console.log("#$##$#$#$",resp);
+
+      if (resp.status === 'ok' && resp.code===200) {
+          Swal.fire('registro exitoso')
+        this.router.navigate(['table-usuario']);
+      }
+
+      else {
+        alert("Registro fallido: "+ resp.status)
       }
     });
   }

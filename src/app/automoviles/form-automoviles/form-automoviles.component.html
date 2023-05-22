@@ -1,30 +1,26 @@
 
-<div>
-  <form>
+<div class="contenedor">
+
+  <form [formGroup]="automovilForm" (ngSubmit)="addAutomovil()">
 
       <h2>REGISTRAR AUTOMOVIL</h2>
 
-   
+
 
      <div class="form-grop">
        <label for="name">Marca</label>
        <input type="text"  class="form-control" name="txtlastName" id="txtname">
      </div>
 
-
-     <div class="form-grop">
+    <div class="form-grop">
        <label for="name">Modelo</label>
        <input type="text"  class="form-control" name="txtcorreo" id="txtname">
      </div>
-
-
-
 
      <div class="form-grop">
        <label for="text">Placa</label>
         <input type="text" class="form-control" name="txtdocument" id="txtname">
      </div>
-
 
      <div class="form-grop">
         <label for="text">Precio</label>
@@ -38,12 +34,11 @@
      </div>
 
 
+    <div class="form-grop">
+      <input type="submit" class="button" value="Guardar">
+    </div>
 
-
-   <button>Registrar</button>
-
-
- </form>
+</form>
 </div>
 
 
