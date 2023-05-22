@@ -1,7 +1,7 @@
 
 
 export interface ResponseI {
-  code: number;
   status:String,
-  data:any
+  data:any,
+  code: String;
 }

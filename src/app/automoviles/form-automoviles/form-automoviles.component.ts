@@ -42,12 +42,12 @@ export class FormAutomovilesComponent implements OnInit{
     this.automovilService.crearAutomovil(automovil).subscribe(resp=>{
       console.log("#$#$#$#$#$#$",resp);
 
-      if(resp.status === 'ok' && resp.code === 200){
+      if(resp.status === 'ok' && resp.code === "200"){
         Swal.fire('Registro exitoso')
         this.router.navigate(['table-automoviles'])
       }
       else{
-        alert("Registro fallido: "+ resp.status)
+        Swal.fire("Registro fallido: "+ resp.status)
       }
     })
   }

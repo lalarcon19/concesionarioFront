@@ -54,13 +54,12 @@ export class FormComponentComponent implements OnInit{
     this.userService.crearUsuario(usuario).subscribe(resp => {
         console.log("#$##$#$#$",resp);
 
-      if (resp.status === 'ok' && resp.code===200) {
-          Swal.fire('registro exitoso')
-        this.router.navigate(['table-usuario']);
-      }
-
+        if (resp.status === "ok" && resp.code === "200") {
+          Swal.fire('Registro exitoso')
+          this.router.navigate(['table-usuario']);
+        }
       else {
-        alert("Registro fallido: "+ resp.status)
+        Swal.fire("Registro fallido: "+ resp.status)
       }
     });
   }
