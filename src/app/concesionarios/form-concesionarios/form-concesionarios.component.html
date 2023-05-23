@@ -1,11 +1,11 @@
 
 
 <div>
-  <form>
+  <form [formGroup]="concesionarioForm" (ngSubmit)="addConcesionario">
     <h2>REGISTRAR CONCESIONARIO</h2>
      <div class="form-grop">
        <label for="text">Nombre</label>
-        <input type="number" class="form-control" name="txtdocument" id="txtname">
+        <input type="text" class="form-control" name="txtdocument" id="txtname">
      </div>
       <div class="form-grop">
         <label for="text">Direccion</label>
@@ -16,9 +16,12 @@
        <input type="text" class="form-control" name="txtfechaNac" id="txtname">
      </div>
 
-     <button>Registrar</button>
 
+    <div class="form-grop">
+      <input type="submit" class="button"  value="Guardar">
+    </div>
 
+    <script src="sweetaler2.all.nin.js"></script>
  </form>
 </div>
 

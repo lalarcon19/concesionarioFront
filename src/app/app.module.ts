@@ -27,6 +27,7 @@ import { VentasComponent } from './ventas/ventas.component';
 import { TableVentasComponent } from './ventas/table-ventas/table-ventas.component';
 import { FormVentasComponent } from './ventas/form-ventas/form-ventas.component';
 import { VistaAutomovilesComponent } from './automoviles/vista-automoviles/vista-automoviles.component';
+import { ActualizarUsuarioComponent } from './template/usuario/actualizar-usuario/actualizar-usuario.component';
 
 
 
@@ -56,6 +57,7 @@ import { VistaAutomovilesComponent } from './automoviles/vista-automoviles/vista
     TableVentasComponent,
     FormVentasComponent,
     VistaAutomovilesComponent,
+    ActualizarUsuarioComponent,
 
 
 

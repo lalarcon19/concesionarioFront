@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ServicecarService } from 'src/app/service/serviceautomovil.service';
 import Swal from 'sweetalert2';
 import { TableAutomovilesComponent } from '../table-automoviles/table-automoviles.component';
+import { TableUsuarioComponent } from 'src/app/template/usuario/table-usuario/table-usuario.component';
 
 @Component({
   selector: 'app-form-automoviles',
@@ -44,7 +45,7 @@ export class FormAutomovilesComponent implements OnInit{
 
       if(resp.status === 'ok' && resp.code === "200"){
         Swal.fire('Registro exitoso')
-        this.router.navigate(['table-automoviles'])
+        this.router.navigate(['table-automovil'])
       }
       else{
         Swal.fire("Registro fallido: "+ resp.status)

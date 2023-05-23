@@ -21,6 +21,11 @@ export class ServiceuserService {
     return this.http.post<ResponseI>(urlBase + "/create", data );
   }
 
+
+  actualizarUsuario(data:any): Observable <ResponseI> {
+    return this.http.put<ResponseI>(urlBase + "/update",data);
+  }
+  
   eliminarUsuario(data:number): Observable<ResponseI> {
     console.log("#####", data);
 

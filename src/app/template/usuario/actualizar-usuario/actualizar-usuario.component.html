@@ -1,7 +1,12 @@
 <div class="contenedor">
   <div class="left">
-    <form [formGroup]="usuarioForm" (ngSubmit)="addUsuario()">
-      <h1 id="registrar">REGISTRARSE</h1>
+    <form class="form-container" [formGroup]="actualizarForm" (ngSubmit)="actualizarUsuario()">
+      <h1 id="registrar">ACTUALIZAR USUARIO</h1>
+
+      <div class="form-grop">
+        <label for="txtid">Id</label>
+        <input type="number" class="form-control" name="txtid" formControlName="id" id="txtid" />
+      </div>
 
       <div class="form-grop">
         <label for="txtname">Nombre</label>
@@ -44,16 +49,10 @@
         <input type="number" class="form-control" name="txtTelefono" formControlName="telefono" id="txtTelefono" />
       </div>
 
-
-
       <div class="form-grop">
         <input type="submit" class="button" value="Guardar">
       </div>
+
       <script src="sweetaler2.all.nin.js"></script>
     </form>
   </div>
-
-  <div class="right">
-    <img id="img" src="./assets/imag2.jpg" alt="" />
-  </div>
-</div>

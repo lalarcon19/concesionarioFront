@@ -1,8 +1,4 @@
-*{
-  display: flex;
-  justify-content: center;
- flex-direction: column;
-}
+
 
 form{
 
@@ -33,13 +29,14 @@ input{
 }
 
 
-button{
+.button{
  align-content: center;
  text-align: center;
  margin-top: 5rem;
  border-radius: 15vh;
  background-color: rgb(47, 47, 112);
  color: white;
-
+ height: 8vh;
+ width: 100%;
 
 }

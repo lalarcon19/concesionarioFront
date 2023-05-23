@@ -18,19 +18,19 @@ export class FormComponentComponent implements OnInit{
     id: new FormControl(''),
     nombre: new FormControl(''),
     apellido: new FormControl(''),
+    fechaNac: new FormControl(''),
     correo: new FormControl(''),
     documento: new FormControl(''),
     fechaIngreso: new FormControl(''),
     direccion: new FormControl(''),
     telefono: new FormControl(''),
     edad: new FormControl(''),
-    fechaNac: new FormControl(''),
+
 
   });
   router: any;
   constructor(private userService: ServiceuserService, router: Router) {}
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 
@@ -41,9 +41,9 @@ export class FormComponentComponent implements OnInit{
       id: this.usuarioForm.get('id')?.value,
       nombre: this.usuarioForm.get('nombre')?.value,
       apellido: this.usuarioForm.get('apellido')?.value,
+      fechaNac: this.usuarioForm.get('fechaNacimiento')?.value,
       correo: this.usuarioForm.get('correo')?.value,
       documento: this.usuarioForm.get('documento')?.value,
-      fechaNac: this.usuarioForm.get('fechaNac')?.value,
       edad: this.usuarioForm.get('edad')?.value,
       direccion: this.usuarioForm.get('direccion')?.value,
       telefono: this.usuarioForm.get('telefono')?.value,

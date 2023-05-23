@@ -36,8 +36,9 @@ justify-content: space-between;
 }
 
 .nav li a:hover {
-  background-color:#767575;
-
+  background-color:#7b80e3c7;
+  border-radius: 3vh;
+  border:solid 2px;
 }
 
 .nav li ul {

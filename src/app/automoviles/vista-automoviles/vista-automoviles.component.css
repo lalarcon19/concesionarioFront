@@ -1,12 +1,15 @@
 *{
   padding: 3vh;
   border-radius: 2rem;
-  
+
 }
 
 .card-img1{
   height: 5px;
   width: 5px;
+  border: solid 1px;
 }
+
+
 
 
