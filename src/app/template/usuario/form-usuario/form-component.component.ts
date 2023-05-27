@@ -56,7 +56,6 @@ export class FormComponentComponent implements OnInit{
 
         if (resp.status === "ok" && resp.code === "200") {
           Swal.fire('Registro exitoso')
-          this.router.navigate(['table-usuario']);
         }
       else {
         Swal.fire("Registro fallido: "+ resp.status)

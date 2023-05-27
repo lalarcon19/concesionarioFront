@@ -1,5 +1,5 @@
-<div>
-  <form>
+<div class="contenedor">
+  <form [formGroup]="ventaForm" (ngSubmit)="addVenta()">
      <h2>REGISTRAR VENTA </h2>
 
      <div class="form-grop">
@@ -17,8 +17,11 @@
        <input type="number"  class="form-control" name="txtcorreo" id="txtname">
      </div>
 
+    <div class="form-grop">
+      <input type="submit" class="button" value="Guardar">
+    </div>
 
-   <button>Registrar</button>
+   
 
 
  </form>

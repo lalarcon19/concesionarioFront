@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const urlBase = "http://localhost:8083/concesionario";
+let urlBase = "http://localhost:8083/concesionario";
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +13,11 @@ export class ServiceconcesionarioService {
   constructor(private http:HttpClient) { }
 
   getAllConcesionario():Observable<ResponseI>{
-    return this.http.get<ResponseI>(urlBase +"/all")
+    return this.http.get<ResponseI>(urlBase +"/all");
   }
 
   crearConcesionario(data: any): Observable<ResponseI>{
+    console.log("#####", data);
     return this.http.put<ResponseI>(urlBase + "/create", data);
   }
 
@@ -25,7 +26,7 @@ export class ServiceconcesionarioService {
   }
 
   eliminarConcesionario(data: number): Observable<ResponseI>{
-    console.log("#######", data);
+    console.log("#####", data);
     return this.http.get<ResponseI>(urlBase + "/delete/" + data);
   }
 }
